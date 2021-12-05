@@ -36,4 +36,7 @@ def setPriority(value):
 
 setPriority(32)
 
-# Create debug log and store it
+# Todo: Create debug log and display it in Visual Studio
+# Todo Answer: Too complicated, will look into it later. Link: https://stackoverflow.com/questions/8452382/write-windows-mini-dumps-with-python
+
+#Todo: Understand Speech to Text Recognition and implement it to take speech as input.
