@@ -4,6 +4,10 @@ from os import system
 
 def endTask(processName):
     killProcess = 'taskkill /im {} /F'.format(processName)  # Statement to be executed
-    os.system(killProcess)
+    
+    try:
+        os.system(killProcess)
+    except PermissionError as pe:
+        print(pe, ' :The task could not be ended due to Permission Error')
 
 endTask('taskmgr.exe')  #Test function call to close Task Manager window if it is open
